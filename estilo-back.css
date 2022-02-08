@@ -1,0 +1,35 @@
+.d1{
+    width: 600px;
+    height: 600px;
+    border: 2px dashed black;
+
+   
+    background-image: url(imagens/cachorro.jfif); /* A imagem está aparecendo dentro da DIV, apenas */
+    background-repeat:no-repeat; 
+    background-attachment: fixed; /*você faz a rolagem e a imagem segue junto, já o scrool deixa ela parada */
+    background-position: center center; /*Eixo "X" e eixo "Y" */
+    padding: 10px; /* Dá um espaçamento da borda */
+    background-clip:content-box; /* border-box quer dizer que a imagem ficará junta à borda */  /* content-box, é para seguir apenas a parte do conteúdo, não ficando tão próxima à borda */
+    background-size: cover; /* Ajusta a largura e a altura, nesta ordem, o "cover" faz cobrir toda a parte possível, tirando o padding,
+    o "contain" faz com que a imagem fique boa, sem perder muita a qualidade da img*/
+}
+
+.d2{
+
+    width: 600px;
+    height: 600px;
+    border: 2px dashed black;
+
+    background-image: linear-gradient(to right, red, green, black, white); /* vão de uma parte do elemento para a outra */
+
+}
+
+.d3{
+
+    width: 600px;
+    height: 600px;
+    border: 2px dashed black;
+
+    background-image: radial-gradient(at center, red, blue, green, white) /* Ele vai espalhando as cores */
+
+}

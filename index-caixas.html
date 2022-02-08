@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+
+    <style>
+        h1{
+            /* border: 1px dashed red; */
+            margin-top: 50px; /* A margin serve para distanciarmos os elementos que estão ao lado, em cima, embaixo, etc */
+            margin-bottom: 300px; /* Margem de baixo  */
+            margin-right: 400px; /* direita */
+            margin-left: 300px; /* esquerda */
+           /*  display:inline; /* O H1 já tem o formato de bloco, para deixar apenas o conteúdo dele, precisa deixar em linha */ 
+
+           border-bottom: 5px;
+           border-bottom-style: solid; /* Para formatar a borda */
+           border-bottom-color: red;
+
+           border-right: 3px;
+           border-right-style: dotted;
+           border-right-color: aqua;
+
+           border-top: 3px;
+           border-top-style: dashed;
+           border-top-color: coral;
+
+           border-left: 3px;
+           border-left-style: groove;
+           border-left-color: darkblue;
+
+        }
+        .p1{
+            border: 1px dashed purple;
+            margin:100px 150px 180px 100px; /* cima, direita, baixo e esquerda */
+        }
+        p strong{
+            border: 3px dotted red;
+        }
+        .p2{
+            border: 1px dashed red;
+            padding-left: 20px; /* Serve para fazer um espaçamento interno dentro do elemento */
+            padding-top: 30px;
+            padding-bottom: 30px;
+            padding-right: 40px;
+            
+        }
+        .p3{
+            border: 1px dashed black;
+            padding: 10px 30px 50px 50px; /* cima, direita, baixo e esquerda */
+            border-bottom:1px solid red ;
+            border-right:3px dashed black ;
+            border-left:5px double brown;
+            border-top: 2px dashed blue ; /* Comprimento, estilo e cor */
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1> Cabeçalho 1</h1>
+    <p class="p1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos voluptatibus atque consequuntur beatae dolorem ex c
+        orrupti <strong> quidem quo,  </strong> repudiandae accusamus illo. Laboriosam au
+        tem amet quia omnis ratione eveniet molestiae in.
+    </p>
+
+    <p class="p2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi facilis rem pa
+        riatur iusto voluptas sit omnis nisi ex blanditiis odit? Aliq
+        uid, numquam natus hic tenetur non optio alias dolorum soluta.
+    </p>
+
+    <p class="p3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi facilis rem pa
+        riatur iusto voluptas sit omnis nisi ex blanditiis odit? Aliq
+        uid, numquam natus hic tenetur non optio alias dolorum soluta.
+    </p>
+
+    <p class="p4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quas possimus quia, voluptatum blanditiis porro pariatur libero error esse voluptatem vitae, exercitationem aperiam officiis et delectus veritatis incidunt suscipit ipsa!</p>
+
+    <img src="imagens/cachorro.jfif" alt="Cachorro">
+    <img src="imagens/cachorro.jfif" alt="Cachorro">
+
+   <!-- Uma imagem sempre ficará ao lado da outra, porque tem o escopo de linha -->
+    
+</body>
+</html>

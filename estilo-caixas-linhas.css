@@ -1,0 +1,54 @@
+
+input, label{
+    display: block; /* Faz com que os elementos peguem todo o espaço horizontal, mesmo que o elemento não precise */
+}
+
+input{
+    margin: 10px 0 10px 0;
+    color: red;
+    border: 1px dotted red;
+    background: white;
+}
+.f2{
+    display: inline-block /* Deixa tanto em linha quanto em bloco, para conseguir utilizar todas as funções "margens, etc" */
+
+}
+button{
+    display: block;
+    background: white;
+    border-radius: 10px; /* Serve para arredondar as bordas */
+    cursor: pointer; /* Coloca a "mãozinha", para o usuário saber que é algo clicável */
+
+}
+button:hover { /* estilizações de pseudoclasse, para quando o botão estiver em cima  */
+    /* Pseudoclasse são elementos que não existem no HTML, apenas no CSS */
+   
+    background: red;
+    font-size: 20px;
+}
+
+input::placeholder{
+    color: red;
+}
+
+.div1{
+    border: 1px solid green;
+    height: 120px;
+    width: 200px;
+    box-shadow: /* horizontal */10px /* vertical */10px /* esmaecimento */10px /* propagação */ 5px black; /* para inserir sombra, valores positivos vão para direita, se for negativo, vai para o outro lado */
+    
+}
+.div2{
+    border: 1px solid rebeccapurple;
+    height: 120px;
+    width: 200px;
+    box-shadow: 10px 10px 10px 5px black, -10px -10px 10px 5px red;   /* Criamos mais de uma sombra */
+}
+
+body {
+    background-image: url(imagens/neutro.jpg);
+    background-size: 1000px;
+    background-repeat: no-repeat; /* Altera se a imagem será repetida, não repetida, se repede apenas no eixo x ou y, etc */
+
+}
+
